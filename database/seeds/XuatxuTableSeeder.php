@@ -14,43 +14,43 @@ class XuatxuTableSeeder extends Seeder
         $list = [
             [
                 'xx_ma'      => 1,
-                'xx_ten'     => "Kết hợp",
+                'xx_ten'     => "Nhập khẩu Mỹ",
                 'xx_taoMoi'  => $today->format('Y-m-d H:i:s'),
                 'xx_capNhat' => $today->format('Y-m-d H:i:s')
             ],
             [
                 'xx_ma'      => 2,
-                'xx_ten'     => "Tân Quy Đông, Sa Đéc",
+                'xx_ten'     => "Lắp ráp trong nước",
                 'xx_taoMoi'  => $today->format('Y-m-d H:i:s'),
                 'xx_capNhat' => $today->format('Y-m-d H:i:s')
             ],
             [
                 'xx_ma'      => 3,
-                'xx_ten'     => "Mỹ Phong, Mỹ Tho",
+                'xx_ten'     => "Nhập khẩu Trung Quốc",
                 'xx_taoMoi'  => $today->format('Y-m-d H:i:s'),
                 'xx_capNhat' => $today->format('Y-m-d H:i:s')
             ],
             [
                 'xx_ma'      => 4,
-                'xx_ten'     => "Vị Thanh, Hậu Giang",
+                'xx_ten'     => "Nhập khẩu Đài loan",
                 'xx_taoMoi'  => $today->format('Y-m-d H:i:s'),
                 'xx_capNhat' => $today->format('Y-m-d H:i:s')
             ],
             [
                 'xx_ma'      => 5,
-                'xx_ten'     => "Cái Mơn, Bến Tre",
+                'xx_ten'     => "Nhập khẩu Hàn Quốc",
                 'xx_taoMoi'  => $today->format('Y-m-d H:i:s'),
                 'xx_capNhat' => $today->format('Y-m-d H:i:s')
             ],
             [
                 'xx_ma'      => 6,
-                'xx_ten'     => "Phước Định, Vĩnh Long",
+                'xx_ten'     => "Nhập khẩu Nhật Bản",
                 'xx_taoMoi'  => $today->format('Y-m-d H:i:s'),
                 'xx_capNhat' => $today->format('Y-m-d H:i:s')
             ],
             [
                 'xx_ma'      => 7,
-                'xx_ten'     => "Đà Lạt",
+                'xx_ten'     => "Sản xuât trong nước",
                 'xx_taoMoi'  => $today->format('Y-m-d H:i:s'),
                 'xx_capNhat' => $today->format('Y-m-d H:i:s')
             ]

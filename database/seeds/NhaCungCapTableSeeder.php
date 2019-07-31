@@ -6,7 +6,7 @@ use Illuminate\PhpVnDataGenerator\VnPersonalInfo;
 class NhaCungCapTableSeeder extends Seeder {
     public function getCompanyName($fullname, $uFN) {
         $loaiDoanhNghiep = ["Cty TNHH TMDV ", "Cty TNHH ", "DNTN ", "Cty TNHH MTV "];
-        $hoaDoanhNghiep  = ["Hoa Tươi ", "Hoa Cao Cấp ", "Hoa ", ""];
+        $hoaDoanhNghiep  = ["Xuất nhập khẩu máy tính ", "Phân phối laptop ", "Máy tính xách tay ", ""];
         $name1 = $loaiDoanhNghiep[VnBase::RandomNumber(0, count($loaiDoanhNghiep) - 1)];
         $name2 = $hoaDoanhNghiep [VnBase::RandomNumber(0, count($hoaDoanhNghiep) - 1)];
         $name  = $name1.$name2;
@@ -46,33 +46,33 @@ class NhaCungCapTableSeeder extends Seeder {
         $uFN = new VnFullname();
         $uPI = new VnPersonalInfo();
 
-        $nXuatXu = 6;
+        $nXuatXu = 5;
         $xuatXu  = [];
         $dsDiaChi= [
             [
-                VnBase::RandomNumber(1, 200).", Khóm Tân Mỹ, P. Tân Quy Đông, TP. Sa Đéc, Đồng Tháp",
-                VnBase::RandomNumber(1, 200).", Khóm Sa Nhiên, P. Tân Quy Đông, TP. Sa Đéc, Đồng Tháp",
-                VnBase::RandomNumber(1, 200)." Lê Lợi, Khóm Tân Mỹ, P. Tân Quy Đông, TP. Sa Đéc, Đồng Tháp"
+                VnBase::RandomNumber(1, 200).", Q.12, TP.Hồ Chí Minh",
+                VnBase::RandomNumber(1, 200).",  Q.12, TP.Hồ Chí Minh",
+                VnBase::RandomNumber(1, 200)."  Q.12, TP.Hồ Chí Minh"
             ],
             [
-                VnBase::RandomNumber(1, 200)." huyện lộ 90B, Ấp Mỹ Hòa, X. Mỹ Phong, TP. Mỹ Tho, Tiền Giang",
-                VnBase::RandomNumber(1, 200).", Ấp Mỹ Hưng, X. Mỹ Phong, TP. Mỹ Tho, Tiền Giang",
-                VnBase::RandomNumber(1, 200).", Ấp Hội Gia, X. Mỹ Phong, TP. Mỹ Tho, Tiền Giang"
+                VnBase::RandomNumber(1, 200).", Quận Tân Bình, Tp. Hồ Chí Minh",
+                VnBase::RandomNumber(1, 200).", Quận Tân Bình, Tp. Hồ Chí Minh",
+                VnBase::RandomNumber(1, 200).", Quận Tân Bình, Tp. Hồ Chí Minh"
             ],
             [
-                VnBase::RandomNumber(1, 200).", X. Vị Thanh, H. Vị Thủy, Hậu Giang",
-                VnBase::RandomNumber(1, 200).", Ấp 6, X. Vị Đông, H. Vị Thủy, Hậu Giang",
-                VnBase::RandomNumber(1, 200).", Ấp 8, X. Vĩnh Trung, H. Vị Thủy, Hậu Giang",
+                VnBase::RandomNumber(1, 200).", Q.Hoàn Kiếm, Hà Nội",
+                VnBase::RandomNumber(1, 200).", Q.Hoàn Kiếm, Hà Nội",
+                VnBase::RandomNumber(1, 200).", Q.Hoàn Kiếm, Hà Nội",
             ],
             [
-                VnBase::RandomNumber(1, 200)." Ấp Lân Tây, X. Phú Sơn, H. Chợ Lách, Bến Tre",
-                VnBase::RandomNumber(1, 200)." Ấp An Hòa, X. Long Thới, H. Chợ Lách, Bến Tre",
-                VnBase::RandomNumber(1, 200)." Ấp Tây Lộc, X. Vĩnh Thành, H. Chợ Lách, Bến Tre"
+                VnBase::RandomNumber(1, 200)." Q. Sơn Trà, Đà Nằng",
+                VnBase::RandomNumber(1, 200)." Q. Sơn Trà, Đà Nằng",
+                VnBase::RandomNumber(1, 200)." Q. Sơn Trà, Đà Nằng"
             ],
             [
-                VnBase::RandomNumber(1,  80) ." Ấp Phước Định, X. Bình Hòa Phước, H. Long Hồ, Vĩnh Long",
-                VnBase::RandomNumber(81, 150)." Ấp Phước Định, X. Bình Hòa Phước, H. Long Hồ, Vĩnh Long",
-                VnBase::RandomNumber(151,200)." Ấp Phước Định, X. Bình Hòa Phước, H. Long Hồ, Vĩnh Long",
+                VnBase::RandomNumber(1,  80) ."  Q. Ninh Kiều, Cần Thơ",
+                VnBase::RandomNumber(81, 150)." Q. Ninh Kiều, Cần Thơ",
+                VnBase::RandomNumber(151,200)." Q. Ninh Kiều, Cần Thơ",
             ],
             [
                 VnBase::RandomNumber(1, 200)." Thánh Mẫu, P. 7, TP. Đà Lạt, Lâm Đồng",
@@ -92,7 +92,7 @@ class NhaCungCapTableSeeder extends Seeder {
                 $xuatXu[$i] = 3;
             }
         }
-        $xuatXu[$nXuatXu] = VnBase::RandomNumber(2, 5); //Đà Lạt
+        $xuatXu[$nXuatXu] = VnBase::RandomNumber(1, 6);
         $today = new DateTime('2010-01-01 08:00:00');
         for ($i=1, $count=2; $i <= $nXuatXu; $i++) {
             for ($j=0; $j < $xuatXu[$i]; $j++, $count++) {

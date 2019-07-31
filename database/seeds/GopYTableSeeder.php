@@ -22,7 +22,7 @@ class GopYTableSeeder extends Seeder
                 'gy_thoiGian'             => $today->format('Y-m-d H:i:s'),
                 'gy_noiDung'              => "gy_noiD $i",
                 'kh_ma'                   => $i,
-                'sp_ma'                   => $i+30,
+                'sp_ma'                   => $i,
                 'gy_trangThai'            => $faker->numberBetween(1, 3)
             ]);
         }

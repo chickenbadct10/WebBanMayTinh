@@ -13,7 +13,7 @@ class HinhanhTableSeeder extends Seeder {
         $list = [];
         $uFN = new VnFullname();
         $uPI = new VnPersonalInfo();
-        for ($i=31; $i <= 60; $i++) {
+        for ($i=1; $i <= 30; $i++) {
             $today = new DateTime();
             array_push($list, [
                 'sp_ma'                   => $i,

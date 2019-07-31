@@ -11,8 +11,8 @@ class LoaiTableSeeder extends Seeder
      */
     public function run() {
         $list = [];
-        $types = ["Hoa lẻ", "Phụ liệu", "Bó hoa", "Giỏ hoa", "Hoa hộp giấy",
-                       "Kệ hoa", "Vòng hoa", "Bình hoa", "Hoa hộp gỗ"];
+        $types = ["Dell", "Acer", "Asus", "SamSung", "HP",
+                       "Lenovo", "Xiaomi", "LG", "MSI", "MacBook"];
         sort($types);
         $today = new DateTime('2019-01-01 08:00:00');
         for ($i=1; $i <= count($types); $i++) {
